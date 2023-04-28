@@ -1,8 +1,9 @@
 package Modelo;
 
+
 public class Cabagna extends Hospederia {
     private boolean chimenea;
-    private  Integer capacidad;
+    private Integer capacidad;
 
     public boolean isChimenea() {
         return chimenea;
