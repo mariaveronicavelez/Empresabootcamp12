@@ -2,23 +2,23 @@ package Vista;
 import java.io.*;
 class Leer
 {	public static String dato()
-	{	String sdato="";
-		try
-		{	InputStreamReader isr=new InputStreamReader(System.in);
-			BufferedReader flujoe=new BufferedReader(isr);
-			sdato=flujoe.readLine();
-		}
-		catch(IOException e)
-		{
-			 System.err.println("Error: "+ e.getMessage());
-		}
-		return(sdato);
+{	String sdato="";
+	try
+	{	InputStreamReader isr=new InputStreamReader(System.in);
+		BufferedReader flujoe=new BufferedReader(isr);
+		sdato=flujoe.readLine();
 	}
+	catch(IOException e)
+	{
+		System.err.println("Error: "+ e.getMessage());
+	}
+	return(sdato);
+}
 	public static char datoChar()
 	{
 		try
 		{
-			char resp=dato().charAt(0);	
+			char resp=dato().charAt(0);
 			return(resp);
 		}
 		catch(Exception error)
@@ -56,7 +56,7 @@ class Leer
 		{
 			return(false);
 		}
-	}		
+	}
 	public static short datoShort()
 	{
 		try
@@ -78,7 +78,7 @@ class Leer
 		{
 			return(Long.MIN_VALUE);
 		}
-	}	
+	}
 	public static float datoFloat()
 	{
 		try
@@ -89,7 +89,7 @@ class Leer
 		{
 			return(Float.NaN);
 		}
-	}	
+	}
 	public static double datoDouble()
 	{
 		try
