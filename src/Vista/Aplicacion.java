@@ -1,10 +1,8 @@
 package Vista;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.Scanner;
+
 import Controlador.Turismo;
-import Modelo.DatosCliente;
 
 public class Aplicacion {
 
@@ -12,7 +10,7 @@ public class Aplicacion {
         Turismo turismo = new Turismo(new ArrayList<>());
 
 
-      int opcion;
+        int opcion;
         do{
             opcion = turismo.Menu();
             switch(opcion){
@@ -57,13 +55,13 @@ public class Aplicacion {
                     break;
                 case 6:
                     Integer Valor4;
-                   do {
-                       System.out.println("¿De que tipo de alojamiento quiere saber la cantidad? ");
-                       System.out.println("1-Cabagna");
-                       System.out.println("2-Hotel");
-                       System.out.println("3-Carpa");
-                       Valor4 = Leer.datoInt();
-                   }while (Valor4<1 || Valor4>3);
+                    do {
+                        System.out.println("¿De que tipo de alojamiento quiere saber la cantidad? ");
+                        System.out.println("1-Cabagna");
+                        System.out.println("2-Hotel");
+                        System.out.println("3-Carpa");
+                        Valor4 = Leer.datoInt();
+                    }while (Valor4<1 || Valor4>3);
                     turismo.buscarAlojamientoEspecifico(Valor4);
                     break;
                 case 7:
@@ -87,10 +85,12 @@ public class Aplicacion {
                     System.exit(0);
             }
 
-        }while(opcion !=9); //repetir
+        }while(opcion !=9); //se repite
 
 
     }
 
 
-    }
+}
+
+
