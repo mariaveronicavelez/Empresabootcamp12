@@ -66,7 +66,7 @@ public class Turismo {
                 chimenea = false;
             }
             cabagna.setChimenea(chimenea);
-            System.out.println("Ingrese cantidad de noches a quedarse: ");
+            System.out.println("Ingrese cantidad de noches que se quedará : ");
             Integer cantidadNoches = sc.nextInt();
             cabagna.setCantidaddenoches(cantidadNoches);
             //Preguntar al cliente si es fumador o no
@@ -110,7 +110,7 @@ public class Turismo {
             }
             hotel.setCondesayuno(desayuno);
             //consulto cantidad de noches
-            System.out.println("Ingrese cantidad de noches a quedarse: ");
+            System.out.println("Ingrese cantidad de noches que se quedará: ");
             Integer cantidadNoches = sc.nextInt();
             hotel.setCantidaddenoches(cantidadNoches);
             //Consulto al cliente si es fumador o no
